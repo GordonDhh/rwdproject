@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>产品介绍</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+      <!-- 商品頁面 -->
+      <div class="container">
+        <!-- https://getbootstrap.com/docs/4.6/components/breadcrumb/  麵包屑 -->
+        <nav aria-label="breadcrumb">
+            <!-- bg-transparent可以移除背景顏色 -->
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">编程书籍店</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Java编程思想</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- sticky-top固定 -->
+                <div class="sticky-top" style="top: 10px;">
+                    <div class="d-flex">
+                        <h1 class="h2">Java编程思想</h1>
+                        <span class="h4 text-secondary pt-2 ml-2">(第4版)</span>
+                    </div>
+                    <!-- justify-content-end align-items-end 讓售價可以靠右邊並且對齊底部 -->
+                    <div class="d-flex justify-content-end align-items-end">
+                        <del class="text-muted">售價 $60</del>
+                        <!-- h3樣式變大文字ml-auto 會有彈性的伸縮 mb-0對齊在同一條底線 text-danger強調文字言色變紅色 -->
+                        <div class="h3 ml-auto mb-0 text-danger">
+                            <small>網路價 NT$</small>
+                            <strong>49</strong>
+                        </div>
+                    </div>
+                    <hr> 类型:
+                    <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+                    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>全新
+                        </label>
+                        <!-- disabled可以關閉不可以選擇 -->
+                        <label class="btn btn-outline-secondary disabled">
+                            <input type="radio" name="options" id="option2" autocomplete="off" disabled> 二手
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 电子书
+                        </label>
+                      
+                    </div>
+                    <!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
+                    <div class="input-group mt-3">
+                        <select name="" id="number" class="form-control mr-1">
+                            <option value="1">1 件</option>
+                            <option value="2">2 件</option>
+                            <option value="3">3 件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#editModal">加入購物車</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <h2>经典书籍</h2>
+                <p class="mb-5">《计算机科学丛书：Java编程思想（第4版）》赢得了全球程序员的广泛赞誉，即使是晦涩的概念，在BruceEckel的文字亲和力和小而直接的编程 示例面前也会化解于无形。从Java的基础语法到高级特性（深入的面向对象概念、多线程、自动项目构建、单元测试和调试等），本书都能逐步指导你轻松掌 握。</p>
+                <h3 class="text-center">经典著作</h3>
+                <img src="img/06.jpg?w=634" class="w-100" alt="">
+
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>

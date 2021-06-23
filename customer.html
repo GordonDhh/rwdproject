@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>客户结账</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<!-- 結帳完成頁面 -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center text-secondary mb-3">购书网 結帳完成</h2>
+            <div class="alert alert-success text-center alert-rounded" role="alert">
+                完成
+            </div>
+            <h3 class="text-center mb-3">購買資訊</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="200">商品名稱</th>
+                        <th width="150">數量</th>
+                        <th width="120">小計</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-1 width=" 140"><img
+                                src="img/01.jpg?w=1350"
+                                class="img-thumbnail" width="110" alt="">
+                        </td>
+                        <td class="align-middle">Java编程思想</td>
+                        <td class="align-middle">1件</td>
+                        <td class="align-middle text-right">$49</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="align-middle text-right">運費</td>
+                        <th class="align-middle text-right">$60</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="align-middle text-right">合計</td>
+                        <th class="align-middle text-right">$109</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h3 class="text-center mb-4">個人資料</h3>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Email</th>
+                        <td>abc@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>姓名</th>
+                        <td>吃手手</td>
+                    </tr>
+                    <tr>
+                        <th>電話</th>
+                        <td>0912345678</td>
+                    </tr>
+                    <tr>
+                        <th>地址</th>
+                        <td>重慶南路一段123號</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<body>
+
+
+<footer class="bg-light text-muted py-3">
+    <div class="conatiner">
+        <ul class="list-inline text-center">
+            <li class="list-inline-item">© Copright 2021 购书网</li>
+            <li class="list-inline-item">
+                <a class="text-info" href="#">
+                    <i class="fab fa-instagram-square" aria-hidden="true"></i> Instagrame
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="text-info" href="#">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="text-info" href="#">About</a>
+            </li>
+        </ul>
+        <p class="text-center">Made with Bootstrap4</p>
+    </div>
+</footer>
+
+
+<!-- editModal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="editModalLabel">登入購買</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3" placeholder="請輸入Email">
+                        <label for="password">密碼</label>
+                        <input type="password" class="form-control mb-3" placeholder="請輸入密碼">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">記住帳號</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">登入</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- removeModal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title text-white" id="removeModalLabel">確認</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th width="30"></th>
+                            <th width="100"></th>
+                            <th>商品名稱</th>
+                            <th width="100">數量</th>
+                            <th width="80">小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center"></td>
+                            <td class="py-1" width="130">
+                                <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350"
+                                    class="img-thumbnail" alt="">
+                            </td>
+                            <td class="align-middle">Java编程思想</td>
+                            <td class="align-middle">1 件</td>
+                            <td class="align-middle text-right">$49</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">運費</td>
+                            <td class="text-right">
+                                <strong>$60</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right">合計</td>
+                            <td class="text-right">
+                                <strong>$580</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-outline-danger">確定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script src="js/all.js"></script>
+</body>
+
+</html>
